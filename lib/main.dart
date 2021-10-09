@@ -18,18 +18,28 @@ class MyApp extends StatelessWidget {
 class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        actionsIconTheme:
-            IconThemeData(size: 30.0, color: Colors.black, opacity: 10.0),
-        leading: Icon(Icons.menu),
-        backgroundColor: Colors.blue,
-        title: Text('Hello Appbar',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-        actions: [
-          Icon(Icons.search),
-          Icon(Icons.more_vert),
-        ],
-      ),
-    );
+        appBar: AppBar(
+          actionsIconTheme:
+              IconThemeData(size: 30.0, color: Colors.black, opacity: 10.0),
+          leading: Icon(Icons.menu),
+          backgroundColor: Colors.blue,
+          title: Text('Hello Appbar',
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+          actions: [
+            Icon(Icons.search),
+            Icon(Icons.more_vert),
+          ],
+        ),
+        body: Container(
+          color: Colors.blue,
+          margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          padding: EdgeInsets.all(30),
+          child: Icon(
+            Icons.home,
+            color: Colors.red,
+            size: 1000.78,
+          ),
+        ));
   }
 }
